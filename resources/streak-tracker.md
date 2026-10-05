@@ -2,14 +2,14 @@
 
 Track your 30-day learning streak. Boxes get checked automatically when you commit with **Day X** in the message.
 
-**Progress:** 0/30 days completed
+**Progress:** 1/30 days completed
 
 ---
 
 ## Week 1 — Security Foundations
 
 - [ ] Day 1 — Why Cybersecurity
-- [ ] Day 2 — Threats & Attack Types
+- [x] Day 2 — Threats & Attack Types
 - [ ] Day 3 — CIA Triad
 - [ ] Day 4 — Passwords & MFA
 - [ ] Day 5 — Cryptography Basics
