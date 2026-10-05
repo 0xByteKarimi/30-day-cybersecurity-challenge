@@ -1,0 +1,74 @@
+name: Update Streak Tracker
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'resources/streak-tracker.md'
+
+permissions:
+  contents: write
+
+jobs:
+  update-streak:
+    name: Parse commit & check off day
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip streak]')"
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Find "Day X" in commit message
+        id: parse
+        run: |
+          MSG=$(git log -1 --pretty=%B)
+          echo "Commit: $MSG"
+
+          # Match: Day 5 / day 5 / Day05 / DAY 12
+          if [[ "$MSG" =~ [Dd][Aa][Yy][[:space:]]*([0-9]{1,2}) ]]; then
+            DAY="${BASH_REMATCH[1]}"
+            DAY=$((10#$DAY))   # strip leading zero
+
+            if [ "$DAY" -ge 1 ] && [ "$DAY" -le 30 ]; then
+              echo "day=$DAY" >> $GITHUB_OUTPUT
+              echo "✅ Found Day $DAY"
+            else
+              echo "⚠️ Day $DAY out of range (1-30)"
+            fi
+          else
+            echo "ℹ️ No 'Day X' in commit message — nothing to do"
+          fi
+
+      - name: Check off the day
+        if: steps.parse.outputs.day != ''
+        run: |
+          DAY=${{ steps.parse.outputs.day }}
+          FILE="resources/streak-tracker.md"
+
+          # Flip "- [ ] Day X" to "- [x] Day X"
+          sed -i "s/- \[ \] Day $DAY /- [x] Day $DAY /" "$FILE"
+
+          # Update the progress counter
+          DONE=$(grep -c '^\- \[x\] Day' "$FILE" || echo 0)
+          sed -i "s|\*\*Progress:\*\*.*|\*\*Progress:\*\* $DONE/30 days completed|" "$FILE"
+
+          echo "Progress: $DONE/30"
+
+      - name: Commit the change
+        if: steps.parse.outputs.day != ''
+        run: |
+          DAY=${{ steps.parse.outputs.day }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet resources/streak-tracker.md; then
+            echo "No change needed"
+            exit 0
+          fi
+
+          git add resources/streak-tracker.md
+          git commit -m "chore: check off Day $DAY ✅ [skip streak]"
+          git push
