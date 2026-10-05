@@ -8,7 +8,7 @@ Track your 30-day learning streak. Boxes get checked automatically when you comm
 
 ## Week 1 — Security Foundations
 
-- [ ] Day 1 — Why Cybersecurity
+- [x] Day 1 — Why Cybersecurity
 - [x] Day 2 — Threats & Attack Types
 - [ ] Day 3 — CIA Triad
 - [ ] Day 4 — Passwords & MFA
