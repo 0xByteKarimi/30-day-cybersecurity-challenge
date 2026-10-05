@@ -1,5 +1,8 @@
 # 🛡️ 30-Day Cybersecurity Challenge
 
+![Markdown Lint](https://github.com/0xByteKarimi/30-day-cybersecurity-challenge/actions/workflows/markdown-lint.yml/badge.svg)
+![Spell Check](https://github.com/0xByteKarimi/30-day-cybersecurity-challenge/actions/workflows/spell-check.yml/badge.svg)
+
 [![Cisco](https://img.shields.io/badge/Cisco-Cybersecurity%20Month-1BA0D7?style=for-the-badge&logo=cisco)](https://www.cisco.com/go/cybercerts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
