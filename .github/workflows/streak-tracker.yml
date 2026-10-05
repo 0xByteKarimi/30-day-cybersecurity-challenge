@@ -2,7 +2,7 @@ name: Update Streak Tracker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths-ignore:
       - 'resources/streak-tracker.md'
 
