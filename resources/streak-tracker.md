@@ -2,7 +2,7 @@
 
 Track your 30-day learning streak. Boxes get checked automatically when you commit with **Day X** in the message.
 
-**Progress:** 1/30 days completed
+**Progress:** 2/30 days completed
 
 ---
 
