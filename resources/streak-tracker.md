@@ -2,7 +2,7 @@
 
 Track your 30-day learning streak. Boxes get checked automatically when you commit with **Day X** in the message.
 
-**Progress:** 3/30 days completed
+**Progress:** 4/30 days completed
 
 ---
 
@@ -13,7 +13,7 @@ Track your 30-day learning streak. Boxes get checked automatically when you comm
 - [x] Day 3 — CIA Triad
 - [ ] Day 4 — Passwords & MFA
 - [ ] Day 5 — Cryptography Basics
-- [ ] Day 6 — Explore Cisco U.
+- [x] Day 6 — Explore Cisco U.
 - [ ] Day 7 — Reflect & Plan
 
 ## Week 2 — Network & Endpoint Defense
