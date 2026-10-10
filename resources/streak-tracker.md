@@ -11,8 +11,8 @@ Track your 30-day learning streak. Boxes get checked automatically when you comm
 - [x] Day 1 — Why Cybersecurity
 - [x] Day 2 — Threats & Attack Types
 - [x] Day 3 — CIA Triad
-- [ ] Day 4 — Passwords & MFA
-- [ ] Day 5 — Cryptography Basics
+- [x] Day 4 — Passwords & MFA
+- [x] Day 5 — Cryptography Basics
 - [x] Day 6 — Explore Cisco U.
 - [ ] Day 7 — Reflect & Plan
 
