@@ -2,7 +2,7 @@
 
 Track your 30-day learning streak. Boxes get checked automatically when you commit with **Day X** in the message.
 
-**Progress:** 7/30 days completed
+**Progress:** 8/30 days completed
 
 ---
 
@@ -18,7 +18,7 @@ Track your 30-day learning streak. Boxes get checked automatically when you comm
 
 ## Week 2 — Network & Endpoint Defense
 
-- [ ] Day 8 — Network Security 101
+- [x] Day 8 — Network Security 101
 - [ ] Day 9 — Defense in Depth
 - [ ] Day 10 — Endpoint Security
 - [ ] Day 11 — Harden a Network
