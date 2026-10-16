@@ -40,22 +40,6 @@ By the end of this week, you will know:
 
 ---
 
-## 🔥 Weekly Progress
-
-Track your streak here. Boxes flip automatically when you commit with `Day X` in the message.
-
-- [ ] Day 1 — Why Cybersecurity
-- [ ] Day 2 — Threats & Attack Types
-- [ ] Day 3 — CIA Triad
-- [ ] Day 4 — Passwords & MFA
-- [ ] Day 5 — Cryptography Basics
-- [ ] Day 6 — Explore Cisco U.
-- [ ] Day 7 — Reflect & Plan
-
-**Progress:** 0 / 7 days
-
----
-
 ## 📚 Main Resources
 
 | Resource | Link |
@@ -88,6 +72,8 @@ You can skip them if you are just starting out. Come back when ready.
 <div align="center">
 
 **Ready?** → [Start with Day 1](day-01-why-cybersecurity-matters.md)
+
+[← Back to root](../README.md)
 
 `#30DaysofCybersecurity`
 
