@@ -2,7 +2,7 @@
 
 Track your 30-day learning streak. Boxes get checked automatically when you commit with **Day X** in the message.
 
-**Progress:** 16/30 days completed
+**Progress:** 17/30 days completed
 
 ---
 
@@ -30,7 +30,7 @@ Track your 30-day learning streak. Boxes get checked automatically when you comm
 
 - [x] Day 15 — Why Splunk
 - [x] Day 16 — Security Monitoring
-- [ ] Day 17 — Intro to SIEM
+- [x] Day 17 — Intro to SIEM
 - [ ] Day 18 — Hands-on SPL
 - [ ] Day 19 — Automate Response
 - [ ] Day 20 — Inside the SOC
