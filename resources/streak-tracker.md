@@ -2,7 +2,7 @@
 
 Track your 30-day learning streak. Boxes get checked automatically when you commit with **Day X** in the message.
 
-**Progress:** 19/30 days completed
+**Progress:** 20/30 days completed
 
 ---
 
@@ -33,7 +33,7 @@ Track your 30-day learning streak. Boxes get checked automatically when you comm
 - [x] Day 17 — Intro to SIEM
 - [x] Day 18 — Hands-on SPL
 - [x] Day 19 — Automate Response
-- [ ] Day 20 — Inside the SOC
+- [x] Day 20 — Inside the SOC
 - [ ] Day 21 — Incident Response
 
 ## Week 4 — Offense, Cloud & Certification
